@@ -6,20 +6,21 @@ CREATE DATABASE project1;
 
 -- met dit statement maak je in table in de database,genaamd account
 CREATE TABLE account(
-id int not null AUTO_INCREMENT,
-email varchar(250) UNIQUE,
-password varchar(250),
-PRIMARY KEY(id)
+    id INT NOT NULL AUTO_INCREMENT,
+    email VARCHAR(250) NOT NULL,
+    password VARCHAR(250) NOT NULL,
+    PRIMARY KEY(id)
 );
 
 
 -- met dit statement maak je table in de database, genaamd persoon.
 CREATE TABLE persoon(
-id int NOT null AUTO_INCREMENT,
-voornaam varchar(250),
-tussenvoegsel varchar(250),
-achternaam varchar(250),
-gebruikersnaam varchar (250),
-PRIMARY KEY(id),
-account_id int REFERENCES account(id)
+    id INT NOT NULL AUTO_INCREMENT,
+    account_id NOT NULL,
+    voornaam VARCHAR(250) NOT NULL,
+    tussenvoegsel VARCHAR(250),
+    achternaam VARCHAR(250) NOT NULL,
+    gebruikersnaam VARCHAR (250) NOT NULL,
+    PRIMARY KEY(id),
+    FOREIGN KEY (account_id) REFERENCES account(id)
 );
