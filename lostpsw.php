@@ -1,10 +1,9 @@
 <html>
-  <body>
-    <h1>Reset wachtwoord</h1>
-    <form>
-      <label>Uw email adres</label>
-      <input type="e-mail" name="e-mail"><br>
-      <button type="submit">Doorgaan<button>
-    </form>
-  </body>
+    <body>
+        <h1>Reset wachtwoord</h1>
+        <form>
+            <input type="e-mail" name="e-mail" placeholder="Vul in uw email"><br>
+            <input type="submit">
+        </form>
+    </body>
 </html>
