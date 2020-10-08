@@ -4,7 +4,7 @@
 include 'database.php';
 include 'HelperFunctions.php';
 
-// met de isset functie wordt gebruikt om te kijken of de POST array wil de variabele gepost worden of niet.
+// met de isset functie wordt gekeken of POST array, wel de variabele post of niet.
 if(isset($_POST['submit'])){
 
   // hier wordt er een array gemaakt, met alle name attributes.
