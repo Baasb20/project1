@@ -19,7 +19,7 @@ if(isset($_POST['submit'])){
 $obj = new HelperFunctions();
 $no_error = $obj->has_provided_input_for_required_fields($fields);
 
-  // wat er hier gebeurt is, op het moment dat er geen error is in input fields.De gegevens worden gestuur naar de database.
+  // Als er geen error is, dan worden de gegevens doorgestuurd naar de database.
   if($no_error){
     $username = $_POST['username'];
     $firstname = $_POST['firstname'];
